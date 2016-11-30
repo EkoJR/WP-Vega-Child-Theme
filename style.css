@@ -1,0 +1,121 @@
+/*
+ Theme Name:   Vega Child
+ Theme URI:    http://ekojr.com
+ Description:  Custom Child Theme for Vega. Prevents any updating with the parent theme from overwritting any changes made.
+ Author:       EkoJR
+ Author URI:   http://ekojr.com
+ Template:     vega
+ Version:      2.0.2
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         one-column, two-columns, right-sidebar, grid-layout, flexible-header, custom-header, custom-colors, custom-menu, featured-image-header, featured-images, footer-widgets, full-width-template, theme-options, translation-ready, blog, news, portfolio
+*/
+
+/**
+* The current stylesheet is loaded after the main skin stylesheet.
+* If you want to make quick style test / changes, consider using the Custom CSS section in Appearance > Customize > Advanced Settings > Custom CSS Code, it will persist on update since it is saved in your database..
+*/
+
+/* 
+ * Responsive Rows
+ */
+
+.respon_row {
+	clear: both;
+	overflow: hidden;
+	/* height: 100%; */
+}
+/* 
+ * Responsive Columns
+*/
+.respon_col {
+	display: block;
+	/* display: table;*/
+	/* width: 48%; */
+	float: left;
+	margin: 0% 0% 1% 2%;
+}
+.respon_col-center {
+	display: block;
+	/* display: table;*/
+	/* width: 48%; */
+	float: none;
+	margin: 0% 0% 1% 2%;
+}
+.respon_col-right {
+	display: block;
+	/* display: table;*/
+	/* width: 48%; */
+	float: right;
+	margin: 0% 0% 1% 2%;
+}
+
+.respon_col:first-child {
+	margin-left: 0;
+}
+.respon_col-center:first-child {
+	margin-left: 0;
+}
+@media only screen and (max-width: 480px){
+	.respon_col, .respon_col-center, .respon_col-right {
+		margin: 0% 0% 1% 0%;
+	}
+}
+/*
+ * Responsive Groups
+ */
+.respon_group:before,
+.respon_group:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+.respon_group {
+	/* For IE 6/7 */
+	zoom:1;
+}
+
+/*
+ * GRID OF TWO
+ */
+/*
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49%;
+}
+*/
+.span_1_of_2, .span_2_of_2 {
+	width: 49%;
+}
+
+
+
+@media only screen and (max-width: 480px){
+	.span_1_of_2, .span_2_of_2 {
+		width: 100%;
+	}
+}
+
+/*
+ * TWITCH CONTAINER
+ */
+
+ .twitch_content {
+  position: relative;
+  width: 100%;
+  height: 56.25%;
+}
+
+.twitch_content:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.twitch_content iframe {
+  position: absolute;
+  width: 100%;
+  height: 56.25%;
+}
