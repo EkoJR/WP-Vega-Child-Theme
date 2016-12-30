@@ -115,17 +115,18 @@
  .twitch_content {
   position: relative;
   width: 100%;
-  height: 56.25%;
 }
 
 .twitch_content:after {
   content: "";
   display: block;
-  padding-bottom: 100%;
+  padding-bottom: 56.25%;
 }
 
-.twitch_content iframe {
+.twitch_content > iframe {
   position: absolute;
   width: 100%;
   height: 56.25%;
+  height: 100%;
+}
 }
