@@ -30,15 +30,12 @@
 */
 .respon_col {
 	display: block;
-	/* display: table;*/
-	/* width: 48%; */
 	float: left;
 	margin: 0% 0% 1% 2%;
 }
 .respon_col-center {
 	display: block;
-	/* display: table;*/
-	/* width: 48%; */
+
 	float: none;
 	margin: 0% 0% 1% 2%;
 }
@@ -56,11 +53,13 @@
 .respon_col-center:first-child {
 	margin-left: 0;
 }
+/*
 @media only screen and (max-width: 480px){
 	.respon_col, .respon_col-center, .respon_col-right {
 		margin: 0% 0% 1% 0%;
 	}
 }
+*/
 /*
  * Responsive Groups
  */
@@ -79,23 +78,34 @@
  * GRID OF TWO
  */
 /*
-.span_2_of_2 {
-	width: 100%;
-}
-.span_1_of_2 {
-	width: 49%;
-}
+.span_2_of_2 { width: 100%; }
+.span_1_of_2 { width: 49%; }
 */
 .span_1_of_2, .span_2_of_2 {
 	width: 49%;
 }
 
-
-
 @media only screen and (max-width: 480px){
 	.span_1_of_2, .span_2_of_2 {
 		width: 100%;
 	}
+}
+
+/*
+ * GRID OF THREE
+ */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66%; }
+.span_1_of_3 { width: 32%; }
+/*
+.span_1_of_3, .span_2_of_3, .span_3_of_3{
+	width: 32%;
+}
+*/
+/*  GO FULL WIDTH BELOW 700 PIXELS */
+@media only screen and (max-width: 700px) {
+	.respon_col {  margin: 1% 1% 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 
 /*
