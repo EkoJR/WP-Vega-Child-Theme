@@ -126,7 +126,6 @@
 .twitch_content > iframe {
   position: absolute;
   width: 100%;
-  height: 56.25%;
   height: 100%;
 }
 }
